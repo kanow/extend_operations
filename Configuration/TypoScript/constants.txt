@@ -1,0 +1,5 @@
+plugin.tx_operations.view {
+    templateRootPath = EXT:extend_operations/Resources/Private/Templates/
+    partialRootPath = EXT:extend_operations/Resources/Private/Partials/
+    layoutRootPath = EXT:extend_operations/Resources/Private/Layouts/
+}

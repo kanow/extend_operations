@@ -1,0 +1,17 @@
+plugin.tx_operations {
+    objects {
+        # extbase: use the extended model class
+        KN\Operations\Domain\Model\Operation {
+            className = KN\ExtendOperations\Domain\Model\Operation
+        }
+    }
+}
+
+config.tx_extbase.persistence.classes {
+    # extbase: use this table for the extended operation model
+    KN\ExtendOperations\Domain\Model\Operation {
+        mapping {
+            tableName = tx_operations_domain_model_operation
+        }
+    }
+}
