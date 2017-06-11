@@ -7,7 +7,7 @@ For using, simply fork the repository or download and modify it.
 
 I only add a custom field "subtitle" in this example. You can add more fields to each other model if you want.
 You can extend the other models in the same way. Add your custom properties to the model class, add getter and setter, extend the TCA for the new fields and adopt the templates.
-If you extend another model (e.g. assistance or vehicles) you have to add a new files for the extending model classes in "Classes" folder and then add the classNaming and table mapping in Configuration/TypoScript/setup.txt.
+If you extend another model (e.g. assistance or vehicles) you have to add a new files for the extending model classes in "Classes/Domain/Model" folder and then add the classNaming and table mapping in Configuration/TypoScript/setup.txt.
 
 Now install the extension or clear the cache in install-Tool. This example extension ist build and tested with TYPO3 8.7.
 
