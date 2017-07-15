@@ -3,7 +3,7 @@ if (!defined ('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-//use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 // define new fields
 $tempColumns = array(
@@ -19,11 +19,11 @@ $tempColumns = array(
 );
 
 // add field to tca
-TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+ExtensionManagementUtility::addTCAcolumns(
     'tx_operations_domain_model_operation',
     $tempColumns
 );
 
 // add new field subtitle after title
-TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes("tx_operations_domain_model_operation", 'subtitle', '', 'after:title');
+ExtensionManagementUtility::addToAllTCAtypes("tx_operations_domain_model_operation", 'subtitle', '', 'after:title');
 
